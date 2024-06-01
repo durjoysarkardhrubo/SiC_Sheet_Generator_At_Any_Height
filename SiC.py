@@ -51,7 +51,7 @@ z_height = float(input("Enter the z-height for the SiC sheet: "))
 
 atom_positions, atom_labels = generate_sic_supercell(a, b, c, alpha, beta, gamma, nx, ny, z_height)
 
-# Save
+# Save file
 save_atom_positions(atom_positions, atom_labels, 'sic_supercell.txt')
 
 print(f"SiC supercell with size {nx}x{ny}x1 at z-height {z_height} has been generated and saved to 'sic_supercell.txt'.")
